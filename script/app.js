@@ -44,7 +44,7 @@ document.getElementById("formulaire").addEventListener("submit", function(event)
   const economie = conso * prix * (pourcentage / 100);
 
   document.getElementById("resultat").textContent =
-    "Économies attendues : " + economie.toFixed(2) + " €";
+    "Vos économies potentielles " + economie.toFixed(2) + " €";
 
   document.getElementById("phrase").textContent =
     "Sur la base de vos déclarations, vous pourriez économiser " +
