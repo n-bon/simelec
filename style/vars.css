@@ -29,3 +29,14 @@ body {
     color: var(--dark);
     font-size: var(--regular);
 }
+ 
+
+button {
+    font-size: var(--regular);
+    padding: var(--smaller);
+    border: none;
+    background-color: var(--white);
+    border-radius: var(--small);
+    font-weight: 600;
+    text-transform: uppercase;
+}

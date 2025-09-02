@@ -1,11 +1,18 @@
 /***** Nathan Bonin, tous droits réservés *****/
-
+* {
+    box-sizing: border-box;
+}
 /*** Cacher les éléments ***/
 
 .app__hidden {
     display: none;
 }
 
+/* Erreurs */
+
+.app__error {
+    color: var(--contrast1);
+}
 /*** Header & Footer ***/
 
 header, footer {
@@ -61,3 +68,40 @@ main {
 
 /** Application **/
 
+/*Input*/
+.app {
+    background-color: var(--bright);
+    padding: var(--regular);
+    border-radius: var(--regular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app form {
+    font-size: var(--regular);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--small);
+}
+
+.app input {
+    font-size: var(--regular);
+    margin-bottom: var(--small);
+    padding: var(--small);
+    border: none;
+    border-radius: var(--small);
+}
+
+.app--submit {
+    background-color: var(--contrast4);
+}
+
+.app--submit:hover {
+    background-color: var(--contrast3);
+}
+
+/* Output */
