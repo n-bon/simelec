@@ -10,6 +10,7 @@
     --contrast2: #355c3e;
     --contrast3: #b3e3ac;
     --contrast4: #accce3;
+    --contrast5: #2c5b7d;
     /* Sizes */
     --xlarge: 3rem;
     --large: 2rem;
@@ -26,5 +27,5 @@ body {
     background-color: var(--white);
     line-height: var(--medium);
     color: var(--dark);
-
+    font-size: var(--regular);
 }

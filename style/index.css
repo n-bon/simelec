@@ -5,3 +5,36 @@
 .app__hidden {
     display: none;
 }
+
+/** Header & Footer **/
+
+header, footer {
+    background-color: var(--bright);
+    padding: var(--medium);
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: var(--medium);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--small);
+    color: var(--contrast5);
+}
+
+footer p {
+    font-size: var(--smaller);
+}
+
+/** Main **/
+
+main {
+    min-height: calc(100svh - 6 * var(--medium));
+    display: flex;
+    flex-direction: column;
+    margin: var(--medium);
+}
+
+
+
