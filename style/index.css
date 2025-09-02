@@ -1,0 +1,7 @@
+/***** Nathan Bonin, tous droits réservés *****/
+
+/*Cacher les éléments*/
+
+.app__hidden {
+    display: none;
+}
