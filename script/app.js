@@ -1,7 +1,9 @@
 // Nathan Bonin, tous droits réservés
+//Gestion de l'affichage
 
+//Gestion du formulaire
 document.getElementById("formulaire").addEventListener("submit", function(event) {
-  event.preventDefault(); // Empêche le rechargement de la page
+  event.preventDefault(); 
 
   const conso = parseFloat(document.getElementById("conso").value);
   const prix = parseFloat(document.getElementById("prix").value);
