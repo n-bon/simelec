@@ -140,7 +140,7 @@ main {
 
 .app--cta h3 {
     font-weight: 600;
-    margin-bottom: var(--regular);
+    margin-bottom: var(--smaller);
     line-height: var(--regular);
     text-transform: uppercase;
 
@@ -148,7 +148,7 @@ main {
 
 .app--cta p {
     line-height: var(--regular);
-    margin-bottom: var(--regular);
+    margin-bottom: var(--smaller);
     font-style: italic;
 }
 
