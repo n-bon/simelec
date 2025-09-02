@@ -44,12 +44,12 @@ document.getElementById("formulaire").addEventListener("submit", function(event)
   const economie = conso * prix * (pourcentage / 100);
 
   document.getElementById("resultat").textContent =
-    "Vos économies potentielles " + economie.toFixed(2) + " €";
+    "Vos économies potentielles " + economie.toFixed(0) + " €";
 
   document.getElementById("phrase").textContent =
     "Sur la base de vos déclarations, vous pourriez économiser " +
-    economie.toFixed(2) + " € par an si vous diminuez votre consommation d'électricité de " +
-    pourcentage.toFixed(1) + " %.";
+    economie.toFixed(0) + " € par an si vous diminuez votre consommation d'électricité de " +
+    pourcentage.toFixed(0) + " %.";
 
   cta.classList.remove("app__hidden");
   replay.classList.remove("app__hidden");
