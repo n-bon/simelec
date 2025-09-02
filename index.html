@@ -19,18 +19,20 @@
             <p>Combien pourriez-vous économiser en réduisant la consommation d'électricité dans votre usine ?</p>
         </section>
         <section class="app">
-            <form id="formulaire">
-                <label for="conso">Consommation annuelle (en MWh) :</label>
-                <input type="number" id="conso" min="0" step="1" placeholder="42000" required>
-                
-                <label for="prix">Prix de l'électricité (€/MWh, HT) :</label>
-                <input type="number" id="prix" min="0" step="1" placeholder="137"required>
-                
-                <label for="pourcentage">Pourcentage d'économies attendu (5% à 20%) :</label>
-                <input type="number" id="pourcentage" min="5" max="20" step="1"  placeholder="18" required>
-                
-                <button type="submit" class="app--submit">Calculer</button>
-            </form>
+            <div class="app--formContainer">
+                <form id="formulaire">
+                    <label for="conso">Consommation annuelle (en MWh) :</label>
+                    <input type="number" id="conso" min="0" step="1" placeholder="42000" required>
+                    
+                    <label for="prix">Prix de l'électricité (€/MWh, HT) :</label>
+                    <input type="number" id="prix" min="0" step="1" placeholder="137"required>
+                    
+                    <label for="pourcentage">Pourcentage d'économies attendu (5% à 20%) :</label>
+                    <input type="number" id="pourcentage" min="5" max="20" step="1"  placeholder="18" required>
+                    
+                    <button type="submit" class="app--submit">Calculer</button>
+                </form>
+            </div>
             <div class="app--resultats app__hidden">
                 <h3>Résultat</h3>
                 <p id="resultat"></p>
