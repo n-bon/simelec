@@ -33,6 +33,7 @@ body {
 
 button {
     font-size: var(--regular);
+    color: var(--dark);
     padding: var(--smaller);
     border: none;
     background-color: var(--white);
