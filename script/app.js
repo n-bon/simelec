@@ -4,7 +4,7 @@
 function recommencer() {
     const replayButton = document.querySelector(".app--replay");
     replayButton.addEventListener("click", function(event) {
-        const formulaire = document.getElementById("formulaire");
+        const formulaire = document.querySelector(".app--formContainer");
         const resultats = document.querySelector(".app--resultats");
         const cta = document.querySelector(".app--cta");
         const replay = document.querySelector(".app--replay");  
@@ -23,7 +23,7 @@ document.getElementById("formulaire").addEventListener("submit", function(event)
   const conso = parseFloat(document.getElementById("conso").value);
   const prix = parseFloat(document.getElementById("prix").value);
   const pourcentage = parseFloat(document.getElementById("pourcentage").value);
-  const formulaire = document.getElementById("formulaire");
+  const formulaire = document.querySelector(".app--formContainer");
   const resultats = document.querySelector(".app--resultats");
   const cta = document.querySelector(".app--cta");
   const replay = document.querySelector(".app--replay");

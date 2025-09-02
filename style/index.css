@@ -1,7 +1,165 @@
 /***** Nathan Bonin, tous droits réservés *****/
-
-/*Cacher les éléments*/
+* {
+    box-sizing: border-box;
+}
+/*** Cacher les éléments ***/
 
 .app__hidden {
     display: none;
+}
+
+/* Erreurs */
+
+.app__error {
+    color: var(--contrast1);
+}
+/*** Header & Footer ***/
+
+header, footer {
+    background-color: var(--bright);
+    padding: var(--medium);
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: var(--medium);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--small);
+    color: var(--contrast5);
+}
+
+footer p {
+    font-size: var(--smaller);
+}
+
+/*** Main ***/
+
+main {
+    min-height: calc(100svh - 8 * var(--medium));
+    display: flex;
+    flex-direction: column;
+    margin: var(--large);
+}
+
+/*** Sections ***/
+
+/** Titre **/
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--medium);
+}
+
+.title h2 {
+    font-size: var(--large);
+    margin-bottom: var(--medium);
+    color: var(--contrast5);
+}
+
+.title p {
+    text-align: center;
+    font-style: italic;
+}
+
+/** Application **/
+
+/*Input*/
+.app {
+    background-color: var(--bright);
+    padding: var(--regular);
+    border-radius: var(--regular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+.app form {
+    font-size: var(--regular);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--small);
+}
+
+.app input {
+    font-size: var(--regular);
+    margin-bottom: var(--small);
+    padding: var(--small);
+    border: none;
+    border-radius: var(--small);
+}
+
+.app--submit {
+    background-color: var(--contrast4);
+}
+
+.app--submit:hover {
+    background-color: var(--contrast3);
+}
+
+/* Output */
+
+.app--resultats h3 {
+    font-size: var(--medium);
+    margin-bottom: var(--regular);
+    font-weight: 600;
+    text-align: center;
+}
+
+#resultat {
+    font-size: var(--medium);
+    line-height: var(--large);
+    margin-bottom: var(--regular);
+    color: var(--contrast2);
+    text-align: center;
+}
+
+#phrase {
+    font-size: smaller;
+    margin-bottom: var(--regular);
+    font-style: italic;
+    text-align: center;
+    line-height: var(--regular);
+}
+
+.app--cta {
+    background-color: var(--contrast4);
+    padding: var(--regular);
+    border-radius: var(--smaller);
+    margin-bottom: var(--regular);
+    text-align: center;
+}
+
+.app--cta h3 {
+    font-weight: 600;
+    margin-bottom: var(--regular);
+    line-height: var(--regular);
+    text-transform: uppercase;
+
+}
+
+.app--cta p {
+    line-height: var(--regular);
+    margin-bottom: var(--regular);
+    font-style: italic;
+}
+
+.app--cta button {
+    background-color: var(--contrast3);
+}
+
+.app--cta button:hover {
+    background-color: var(--white);
+}
+
+.app--replay:hover {
+    background-color: var(--contrast4);
 }
