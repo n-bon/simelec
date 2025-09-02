@@ -1,0 +1,30 @@
+/***** Global vars *****/
+/*Nathan Bonin, tous droits réservés*/
+
+:root {
+    /* Colors */
+    --white: #fbfefb;
+    --bright: #eeeeee;
+    --dark: #222725;
+    --contrast1: #82291f;
+    --contrast2: #355c3e;
+    --contrast3: #b3e3ac;
+    --contrast4: #accce3;
+    /* Sizes */
+    --xlarge: 3rem;
+    --large: 2rem;
+    --medium: 1.5rem;
+    --regular: 1rem;
+    --smaller: 0.8rem;
+    --small: 0.5rem;
+}
+
+/*** Default style ***/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    line-height: var(--medium);
+    color: var(--dark);
+
+}
